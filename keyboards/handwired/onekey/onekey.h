@@ -18,6 +18,8 @@
 
 #include "quantum.h"
 
+static uint8_t wasInitializationCalled = 0;
+
 #define LAYOUT( \
     k00 \
   ) { \
