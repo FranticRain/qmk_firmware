@@ -51,3 +51,6 @@ int16_t adc_read(uint8_t mux);
 #else
 #    define ADC_PRESCALER _BV(ADPS0)  // /2
 #endif
+
+// Defined to maintain parity with the typedef available in ChibiOS for ARM devices
+typedef int16_t adcsample_t;
