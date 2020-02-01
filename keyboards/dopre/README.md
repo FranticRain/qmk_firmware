@@ -50,7 +50,7 @@ There are several components that need to live up to certain performance require
 
 As noted previously, the Dopre implementation is currently only tested for ARM devices. As such, it is recommended that only ARM devices are used for Dopre implementations.
 
-When selecting a microcontroller, the most important aspect (for Dopre's purposes) is the speed of the ADC. Both of the popular ARM microcontroller options (STM32F3XX and STM32F0XX) have the important features of fast ADCs and ADC support in QMK. There is some configuration that will need to be made to these devices that will be covered in a later section.
+When selecting a microcontroller, the most important aspect (for Dopre's purposes) is the speed of the ADC. Both of the popular ARM microcontroller options (STM32F3XX and STM32F0XX) have the important features of fast ADCs and ADC support in QMK. There is some configuration that will need to be made to these devices that will be covered in a later section. It is worth noting that the STM32F3XX ADC is up to _FIVE_ times faster than that of the STM32F0XX. Consider the size of your board, and your performance requirements when selecting a microcontroller.
 
 QMK opts for a standard 10-bit solution for ADC sensing for AVR devices. This, combined with the general speed of AVR devices means that they are largely unsuitable for Dopre operation. However, if an appropriate device can be found, it isn't impossible to implement an AVR-based solution.]
 
