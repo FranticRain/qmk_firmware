@@ -4,7 +4,7 @@
 
 /* Electrostatic Capacitive-specific Config */
 #define ESC_KEYBOARD TRUE
-#define HIGH_LATCH 58
+#define HIGH_LATCH 48
 #define HIGH_UNLATCH 48
 
 /* Additional Keyboard Config */
